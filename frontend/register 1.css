@@ -1,0 +1,122 @@
+@import url(
+);
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    width: 100vw;
+    min-height: 30vh;
+}
+
+.illustration {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: url("imagens/saiba-por-que-a-carona-compartilhada-e-uma-otima-opcao.jpg") no-repeat center center scroll;
+    background-size: cover;
+}
+
+.illustration > img {
+    width: 250px;
+    height: auto;
+    position: absolute;
+    top: 4px;
+    left: 720px;
+    
+    
+    
+}
+
+.register_area {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    gap: 5px;
+}
+
+.register_title {
+    font-size: 1.0rem;
+    font-family: 'verdana';
+    position: absolute;
+    top: 90px;
+    left: 540px;
+}
+
+.register_fields {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: -30px;
+   
+  
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remember_area {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+}
+
+.forgot_password {
+    font-weight: 200;
+    opacity: 0.9;
+    color: black;
+}
+.forgot_password:hover {
+    opacity: 0.5;
+}
+
+.register_button {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    background-color: #CF080F;
+    cursor: pointer;
+    color: white;
+    
+}
+.register_button:hover {
+    opacity: 0.6;
+}
+
+input[type="text"], input[type="password"],input[type="email"] {
+    border: none;
+    margin-top: 40px;
+    border-radius: 60px;
+    padding: 8px 0 8px 35px;
+    outline: none;
+    width: 100%;
+    background-color: whitesmoke;
+  }
+
+  
+
+@media (min-width: 640px) {
+    main {
+        flex-direction: row;
+    }
+    .illustration {
+        min-height: 100vh;
+        width: 50vw;
+    }
+    .register_area {
+        min-width: 100vh;
+        width: 50vw;
+    }
+}
+/* @media (min-width: 768px) { ... }
+@media (min-width: 1024px) { ... }
+@media (min-width: 1280px) { ... }
+@media (min-width: 1536px) { ... } */
