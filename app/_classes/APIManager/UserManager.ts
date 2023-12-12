@@ -9,9 +9,13 @@ export class UserManager extends APIManager {
       { "Content-Type": "application/json" },
       { useServer: false }
     );
-
-    const { error, message } = await response.json() as { error?: string; message?: string; };
-    if (apiErrors.includes(error!)) return { error, message };
+    console.log(response);
+    if (response.status !== 200) {
+      const { error, message } = await response.json() as { error?: string; message?: string; };
+      console.log(error);
+      console.log(message);
+      if (apiErrors.includes(error!)) return { error, message };
+    }
   }
 
   public static async signIn(signInBody: SignInBody): Promise<void | { error?: string; message?: string; }> {
@@ -20,7 +24,9 @@ export class UserManager extends APIManager {
       { "Content-Type": "application/json" }, { useServer: false }
     );
 
-    const { error, message } = await response.json() as { error?: string; message?: string; };
-    if (apiErrors.includes(error!)) return { error, message };
+    if (response.status !== 200) {
+      const { error, message } = await response.json() as { error?: string; message?: string; };
+      if (apiErrors.includes(error!)) return { error, message };
+    }
   }
 }

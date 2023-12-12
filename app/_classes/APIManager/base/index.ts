@@ -16,6 +16,7 @@ export class APIManager {
     });
 
     const authorization = response.headers.get("Authorization");
+    console.log(authorization+" a");
     if (authorization && authorization.startsWith("Bearer ")) {
       const accessToken = authorization.substring(7);
       CookieManager.set(accessToken, useServer);
@@ -30,9 +31,8 @@ export class APIManager {
       if (window) window.location.href = "/auth/signin";
       return;
     }
-    const data = await response.json();
-    if (data["errors"]) return { error: data["error"] as string, message: data["message"] as string};
-    return data;
+
+    return await response.json();
   }
 
   public static async signOut({ useServer }: { useServer: boolean } = { useServer: false }): Promise<void> {

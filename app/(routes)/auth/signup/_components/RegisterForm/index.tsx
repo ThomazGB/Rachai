@@ -55,9 +55,9 @@ export const RegisterForm = () => {
     //   window.alert("Você precisa aceitar os termos se quiser fazer parte do Gamix!");
     //   return;
     // }
-
     register({ username, password, email, ra });
   };
+
   return (
     <form className={styles.register_area} onSubmit={handleSubmit} ref={formRef}>
       <Image src="/imagens/logo-no-bg.png" alt="logo" width={250} height={146} />

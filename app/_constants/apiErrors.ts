@@ -1,3 +1,3 @@
 export const apiErrors = [
-  "erro"
+  "EMAIL_ALREADY_REGISTERED"
 ];
