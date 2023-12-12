@@ -1,0 +1,57 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.content {
+  width: 100%;
+  padding: 20px;
+}
+
+.feedItem {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: 'verdana';
+  max-height: 400px;
+}
+.feedItem:hover {
+opacity: 0.6;
+}
+.feedItem img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.profileImg {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+
+.btnAgendar {
+  margin-top: 10px;
+  background-color: #CF080F;
+  color: #fff; 
+  border-radius: 20px;
+}
+
+.barraSuperior {
+  height: 50px;
+  background: linear-gradient(to right, #CF080F, #c41f1f); /* Substitua as cores pelo seu degradê desejado */
+  color: #fff;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px; /* Adiciona bordas arredondadas */
+}

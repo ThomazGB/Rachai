@@ -1,0 +1,23 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.confirmationImage {
+  margin-bottom: 20px;
+}
+
+.btnPrimary {
+  background-color: #CF080F; 
+  color: #ffffff; 
+  border-color: #ffffff; 
+}
+
+.btnPrimary:hover {
+  background-color: #ffffff; 
+  color: #000000; 
+  border-color: #000000; 
+}
