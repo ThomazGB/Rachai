@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import "./styles/globals.css";
+import "../styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Rachai",
-  description: "Vai uma caroninha?"
+  description: "Vai uma caroninha?",
+  icons: ["/imagens/logo-no-bg.png"]
 }
 
 export default function RootLayout({

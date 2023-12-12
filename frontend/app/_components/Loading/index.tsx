@@ -3,6 +3,6 @@ import React from "react";
 
 export const Loading = () => {
     return (
-        <Image src="imagens/gifLoading.gif" alt="Loading" width={350} height={350} />
+        <Image src="/imagens/loading.gif" alt="Loading" width={350} height={350} />
     );
 };
