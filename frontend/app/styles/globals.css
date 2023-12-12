@@ -37,3 +37,13 @@ body {
     width: 100vw;
     min-height: 100vh;
 }
+
+input[type="text"], input[type="password"],input[type="email"] {
+    border: none;
+    margin-top: 40px;
+    border-radius: 60px;
+    padding: 8px 0 8px 35px;
+    outline: none;
+    width: 100%;
+    background-color: whitesmoke;
+}
